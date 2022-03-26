@@ -78,7 +78,6 @@ app コンテナでマイグレーション
 
 ```sh
 bin/artisan migrate
-exit
 ```
 
 ## VSCode の設定ファイル
