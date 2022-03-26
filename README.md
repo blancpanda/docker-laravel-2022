@@ -21,11 +21,13 @@ docker compose down
 ### プロファイル extra について
 
 node コンテナを起動しておくと watch で待機するようになるので、ファイルの変更にあわせて自動でコンパイルが行われる
+
 普段は任意のタイミングで npm run dev を実行したいので、別プロファイルにして node コンテナのみ起動しないようにしている
 
 ### コマンドのショートカット
 
 コマンドが長いので bin配下にショートカットのためのスクリプトを用意してある
+
 実行できるようにパーミッションを変更する
 
 ```sh
@@ -121,6 +123,7 @@ xsltproc -o laravel/database/README.md tables-mdstyle.xsl db-work/laravel.xml
 ## Laravel をこの Docker 構成ごと git 管理下においた場合の clone からの再構築
 
 初回起動時は extra プロファイルをつけて up
+
 ※ [repository], [project-dir] は各環境に置き換える
 
 ```sh
