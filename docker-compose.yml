@@ -29,7 +29,7 @@ services:
     working_dir: /opt/laravel
     command: [ "npm", "run", "watch-poll" ]
     volumes:
-      - npm-cache:/root/.mpm
+      - npm-cache:/root/.npm
       - ./laravel:/opt/laravel
     profiles:
       # docker compose up -d では起動しない
